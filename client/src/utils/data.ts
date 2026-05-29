@@ -1,4 +1,4 @@
-import { Star, Zap, Shield, Globe, Monitor, Code2, BarChart3, Palette, ShoppingCart, Search, Smartphone, Settings, Brush, Server } from "lucide-react";
+import { Star, Zap, Shield, Globe, Monitor, Code2, BarChart3, Palette, ShoppingCart, Search, Smartphone, Settings, Brush, Server, Clock, TrendingUp, ShieldCheck, Users, HeadphonesIcon, Lightbulb, Award, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import type { FloatingCard, Service, Testimonial } from "../types";
 import africare from '../assets/africare.jpeg'
 import bua from '../assets/bua.jpeg'
@@ -12,12 +12,72 @@ import moniepoint from '../assets/moniepoint.png'
 import mybuddy from '../assets/Mybuddy.png'
 import newlord from '../assets/newlord.jpeg'
 import paystack from '../assets/paystack.png'
+import { FaWhatsapp } from "react-icons/fa";
 
 export const navLinks = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "services", label: "Services" },
   { id: "contact", label: "Contact" },
+];
+
+export const items = [
+    "Website Design & Development",
+    "E-Commerce Website",
+    "Mobile App Development",
+    "Custom Software Development",
+    "UI/UX Design",
+    "Search Engine Optimization",
+    "Cloud & DevOps Solutions",
+    "Graphic Design & Branding",
+    "Website Hosting & Management",
+    "Other",
+];
+
+export const contact = [
+
+    { 
+        icon: FaWhatsapp, 
+        href: "https://wa.me/2348076172456", 
+        label: "WhatsApp" 
+    },
+    { 
+        icon: Mail, 
+        href: "mailto:your@email.com", 
+        label: "Mail" 
+    },
+
+]
+
+export const contactInfo = [
+    {
+        icon: MapPin,
+        label: "OUR OFFICE",
+        lines: [
+            "20, Oluade Way",
+            "Odediran Estate,",
+            "Jakande Gate, Lagos, Nigeria",
+        ],
+        bold: 2,
+    },
+    {
+        icon: Phone,
+        label: "PHONE / WHATSAPP",
+        lines: ["08076172456"],
+        bold: 0,
+    },
+    {
+        icon: Mail,
+        label: "EMAIL US",
+        lines: ["hello@dechuckify.com"],
+        bold: 0,
+    },
+    {
+        icon: Clock,
+        label: "BUSINESS HOURS",
+        lines: ["Mon – Fri: 8am – 6pm", "Sat: 9am – 3pm"],
+        bold: -1,
+    },
 ];
 
 export const floatingCards: FloatingCard[] = [
@@ -208,4 +268,70 @@ export const initialTestimonials: Testimonial[] = [
     text: "Exceptional mobile-first design. Our app retention improved by 60% after the redesign. Dechuckify understands African users and builds products that actually resonate.",
     date: "June 2025",
   },
+];
+
+export const reasons = [
+  {
+    icon: Code2,
+    title: "Clean, Scalable Code",
+    desc: "We write maintainable, well-documented code built to scale. No shortcuts, no technical debt — just solid engineering that grows with your business.",
+    stat: "100%",
+    statLabel: "Code Quality",
+  },
+  {
+    icon: Clock,
+    title: "On-Time Delivery",
+    desc: "We respect your deadlines. Our agile workflow and transparent project management ensure every milestone is hit without compromising quality.",
+    stat: "98%",
+    statLabel: "On-Time Rate",
+  },
+  {
+    icon: TrendingUp,
+    title: "Results-Driven Approach",
+    desc: "We don't just build — we strategize. Every decision is tied to measurable outcomes: more traffic, better conversions, and real business growth.",
+    stat: "3x",
+    statLabel: "Avg. ROI",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Security First",
+    desc: "Security is baked into everything we build — from SSL and encrypted databases to regular audits and compliance-ready architecture.",
+    stat: "0",
+    statLabel: "Breaches",
+  },
+  {
+    icon: Users,
+    title: "Dedicated Team",
+    desc: "You get a committed team of designers, developers, and strategists who treat your project as their own. No freelancers. No handoffs.",
+    stat: "15+",
+    statLabel: "Specialists",
+  },
+  {
+    icon: HeadphonesIcon,
+    title: "24/7 Support",
+    desc: "We're always available. Whether it's a critical bug at midnight or a feature request on a Sunday, our support team responds fast.",
+    stat: "< 2hrs",
+    statLabel: "Avg. Response",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation-Led Thinking",
+    desc: "We stay ahead of technology trends so you don't have to. From AI integrations to modern frameworks, we bring cutting-edge solutions to every project.",
+    stat: "5+",
+    statLabel: "Tech Stacks",
+  },
+  {
+    icon: Award,
+    title: "Proven Track Record",
+    desc: "With 10+ years in the industry and clients across Nigeria and beyond, our portfolio speaks for itself. We've helped startups scale and enterprises modernize.",
+    stat: "200+",
+    statLabel: "Projects Done",
+  },
+];
+
+export const stats = [
+  { value: "200+", label: "Projects Delivered" },
+  { value: "98%", label: "Client Satisfaction" },
+  { value: "10+", label: "Years Experience" },
+  { value: "24/7", label: "Support Available" },
 ];

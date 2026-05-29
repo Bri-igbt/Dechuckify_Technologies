@@ -16,16 +16,17 @@ const Testimonials = () => {
 
     const handleAdd = (t: Omit<Testimonial, "id" | "date" | "avatar">) => {
         const avatars = [
-        "https://randomuser.me/api/portraits/men/45.jpg",
-        "https://randomuser.me/api/portraits/women/33.jpg",
-        "https://randomuser.me/api/portraits/men/60.jpg",
-        "https://randomuser.me/api/portraits/women/55.jpg",
+            "https://randomuser.me/api/portraits/men/45.jpg",
+            "https://randomuser.me/api/portraits/women/33.jpg",
+            "https://randomuser.me/api/portraits/men/60.jpg",
+            "https://randomuser.me/api/portraits/women/55.jpg",
         ];
+
         const newT: Testimonial = {
-        ...t,
-        id: Date.now(),
-        date: new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" }),
-        avatar: avatars[Math.floor(Math.random() * avatars.length)],
+            ...t,
+            id: Date.now(),
+            date: new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" }),
+            avatar: avatars[Math.floor(Math.random() * avatars.length)],
         };
         setTestimonials((prev) => [newT, ...prev]);
         setPage(0);
@@ -93,45 +94,44 @@ const Testimonials = () => {
                 {totalPages > 1 && (
                 <div className="flex items-center justify-center gap-4 mt-12">
                     <button
-                    onClick={() => setPage((p) => Math.max(0, p - 1))}
-                    disabled={page === 0}
-                    className="w-10 h-10 rounded-full border border-[#1e2e1e] flex items-center justify-center text-[#64748b] hover:border-[#22c55e]/50 hover:text-purple-950 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
+                        onClick={() => setPage((p) => Math.max(0, p - 1))}
+                        disabled={page === 0}
+                    className="w-10 h-10 rounded-full border border-[#1e2e1e] flex items-center justify-center text-[#64748b] hover:border-white/95 hover:text-purple-950 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
                     >
                     <ChevronLeft size={18} />
                     </button>
 
                     <div className="flex gap-2">
-                    {Array.from({ length: totalPages }).map((_, i) => (
-                        <button
-                        key={i}
-                        onClick={() => setPage(i)}
-                        className={`transition-all duration-200 rounded-full ${
-                            i === page
-                            ? "w-8 h-3 bg-[#22c55e]"
-                            : "w-3 h-3 bg-[#1e2e1e] hover:bg-[#22c55e]/40"
-                        }`}
-                        />
-                    ))}
+                        {Array.from({ length: totalPages }).map((_, i) => (
+                            <button
+                                key={i}
+                                onClick={() => setPage(i)}
+                                className={`transition-all duration-200 rounded-full ${
+                                    i === page
+                                    ? "w-8 h-3 bg-white/75"
+                                    : "w-3 h-3 bg-white/75 hover:bg-white"
+                                }`}
+                            />
+                        ))}
                     </div>
 
                     <button
-                    onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
-                    disabled={page === totalPages - 1}
-                    className="w-10 h-10 rounded-full border border-[#1e2e1e] flex items-center justify-center text-[#64748b] hover:border-[#22c55e]/50 hover:text-purple-950 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
+                        onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+                        disabled={page === totalPages - 1}
+                        className="w-10 h-10 rounded-full border border-[#1e2e1e] flex items-center justify-center text-[#64748b] hover:border-white hover:text-purple-950 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
                     >
-                    <ChevronRight size={18} />
+                        <ChevronRight size={18} />
                     </button>
                 </div>
                 )}
             </div>
 
-        {/* ── Modal ── */}
-        {showModal && (
-            <TestimonialModal
-            onClose={() => setShowModal(false)}
-            onSubmit={handleAdd}
-            />
-        )}
+            {showModal && (
+                <TestimonialModal
+                    onClose={() => setShowModal(false)}
+                    onSubmit={handleAdd}
+                />
+            )}
         </section>
     );
 }
