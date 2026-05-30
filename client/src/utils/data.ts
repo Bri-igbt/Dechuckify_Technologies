@@ -12,7 +12,8 @@ import moniepoint from '../assets/moniepoint.png'
 import mybuddy from '../assets/Mybuddy.png'
 import newlord from '../assets/newlord.jpeg'
 import paystack from '../assets/paystack.png'
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const navLinks = [
   { id: "home", label: "Home" },
@@ -38,24 +39,51 @@ export const contact = [
 
     { 
         icon: FaWhatsapp, 
-        href: "https://wa.me/2348076172456", 
+        href: "https://wa.me/2349055918964", 
         label: "WhatsApp" 
     },
     { 
         icon: Mail, 
-        href: "mailto:your@email.com", 
+        href: "mailto:hr@dechuckify.com", 
         label: "Mail" 
     },
 
 ]
+
+export const works = [
+  "Website Design & Development",
+  "E-Commerce Websites",
+  "Mobile App Development",
+  "Custom Software Development",
+  "UI/UX Design",
+  "SEO & Digital Marketing",
+  "Cloud & DevOps",
+  "Graphic Design & Branding",
+];
+
+export const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "#about" },
+  { label: "Services", to: "#services" },
+  { label: "Portfolio", to: "#portfolio" },
+  { label: "Testimonials", to: "#testimonials" },
+  { label: "Why Choose Us", to: "#why-us" },
+  { label: "Contact", to: "#contact" },
+];
+
+export const socials = [
+  { icon: FaWhatsapp,  href: "https://wa.me/2349055918964", label: "WhatsApp" },
+  { icon: FaFacebook,  href: "#", label: "Facebook" },
+  { icon: FaInstagram, href: "#", label: "Instagram" },
+  { icon: FaLinkedin,  href: "#", label: "LinkedIn" },
+  { icon: MdEmail,     href: "mailto:hr@dechuckify.com", label: "Email" },
+];
 
 export const contactInfo = [
     {
         icon: MapPin,
         label: "OUR OFFICE",
         lines: [
-            "20, Oluade Way",
-            "Odediran Estate,",
             "Jakande Gate, Lagos, Nigeria",
         ],
         bold: 2,
@@ -63,13 +91,13 @@ export const contactInfo = [
     {
         icon: Phone,
         label: "PHONE / WHATSAPP",
-        lines: ["08076172456"],
+        lines: ["+2349055918964"],
         bold: 0,
     },
     {
         icon: Mail,
         label: "EMAIL US",
-        lines: ["hello@dechuckify.com"],
+        lines: ["hr@dechuckify.com"],
         bold: 0,
     },
     {
@@ -210,22 +238,22 @@ export const brands = [
 export const initialTestimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Adaeze Okonkwo",
-    role: "CEO",
-    company: "BrightPath Nigeria",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Faith Agbamu",
+    role: "HR",
+    company: "Newlord Nigeria Limited",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQFYawYk0F7FDQ/profile-displayphoto-crop_800_800/B4DZmR0RLtH0AI-/0/1759088024620?e=1781740800&v=beta&t=wD78zJLD_kKjRXmO2sd2Iu9Nb7C8GPdiSNIsVJTs77o",
     rating: 5,
     text: "Dechuckify Technologies completely transformed our online presence. The team delivered a stunning, fast website that has tripled our leads in just 3 months. Absolutely world-class service.",
     date: "March 2025",
   },
   {
     id: 2,
-    name: "Emeka Nwosu",
-    role: "Founder",
-    company: "SwiftPay Fintech",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Roma Blake",
+    role: "CTO",
+    company: "StackQuest Electric",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIf-SfE4mmsE-hR7mof9XQeG3pSa_UpPAeHQ&s",
     rating: 5,
-    text: "We needed a complex fintech dashboard built fast. Dechuckify delivered beyond expectations — clean code, great UI, and impeccable attention to security. Will use them again.",
+    text: "We needed a modern but complex website built fast. Dechuckify delivered beyond expectations clean code, great UI, and impeccable attention to security. Will use them again.",
     date: "January 2025",
   },
   {
@@ -233,17 +261,17 @@ export const initialTestimonials: Testimonial[] = [
     name: "Fatima Al-Hassan",
     role: "Marketing Director",
     company: "Nosak Group",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PLpcTHmmhyx4cpZzNEiC6ln3Wttc_Gyxvg&s",
     rating: 5,
     text: "Professional, responsive, and incredibly talented. Our e-commerce platform went from concept to launch in 6 weeks. Revenue has grown by 40% since the new site launched.",
     date: "February 2025",
   },
   {
     id: 4,
-    name: "Tunde Adeyemi",
-    role: "CTO",
-    company: "Moniepoint",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    name: "Jessica Owen",
+    role: "HR",
+    company: "Loft Cargo",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVoNEmB0J2js4SYLnHVVGNcPlPAdyvX2Uyw&s",
     rating: 4,
     text: "Solid engineering team. They understood our technical requirements immediately and built a robust, scalable solution. Communication throughout the project was excellent.",
     date: "April 2025",
@@ -253,19 +281,19 @@ export const initialTestimonials: Testimonial[] = [
     name: "Chisom Eze",
     role: "Operations Manager",
     company: "AfriCare Health",
-    avatar: "https://randomuser.me/api/portraits/women/12.jpg",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQGvoCZVTevimQ/profile-displayphoto-crop_800_800/B4DZnAYwRpIgAI-/0/1759869460159?e=1781740800&v=beta&t=bdp_aQvozBqQo0oEP9GsxlmjlOG1cqAnXT59po1pwLs",
     rating: 5,
     text: "From the first call, Dechuckify made us feel heard. They built a patient management portal that our staff loves using. The attention to UX detail is second to none.",
     date: "May 2025",
   },
   {
     id: 6,
-    name: "Oluwaseun Bakare",
+    name: "Princess Karen",
     role: "Product Lead",
     company: "Kuda Bank",
-    avatar: "https://randomuser.me/api/portraits/men/18.jpg",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQEHD-pITvwSQQ/profile-displayphoto-crop_800_800/B4DZsFJt6uI8AI-/0/1765317993690?e=1781740800&v=beta&t=Kdw7mJHL7Y9tKsxl15PdklIJ3l99YBImXjmRiHZvevk",
     rating: 5,
-    text: "Exceptional mobile-first design. Our app retention improved by 60% after the redesign. Dechuckify understands African users and builds products that actually resonate.",
+    text: "Exceptional mobile first design. Our app retention improved by 60% after the redesign. Dechuckify understands African users and builds products that actually resonate.",
     date: "June 2025",
   },
 ];
@@ -274,7 +302,7 @@ export const reasons = [
   {
     icon: Code2,
     title: "Clean, Scalable Code",
-    desc: "We write maintainable, well-documented code built to scale. No shortcuts, no technical debt — just solid engineering that grows with your business.",
+    desc: "We write maintainable, well documented code built to scale. No shortcuts, no technical debt just solid engineering that grows with your business.",
     stat: "100%",
     statLabel: "Code Quality",
   },
@@ -288,14 +316,14 @@ export const reasons = [
   {
     icon: TrendingUp,
     title: "Results-Driven Approach",
-    desc: "We don't just build — we strategize. Every decision is tied to measurable outcomes: more traffic, better conversions, and real business growth.",
+    desc: "We don't just build we strategize. Every decision is tied to measurable outcomes: more traffic, better conversions, and real business growth.",
     stat: "3x",
     statLabel: "Avg. ROI",
   },
   {
     icon: ShieldCheck,
     title: "Security First",
-    desc: "Security is baked into everything we build — from SSL and encrypted databases to regular audits and compliance-ready architecture.",
+    desc: "Security is baked into everything we build from SSL and encrypted databases to regular audits and compliance ready architecture.",
     stat: "0",
     statLabel: "Breaches",
   },
@@ -316,22 +344,22 @@ export const reasons = [
   {
     icon: Lightbulb,
     title: "Innovation-Led Thinking",
-    desc: "We stay ahead of technology trends so you don't have to. From AI integrations to modern frameworks, we bring cutting-edge solutions to every project.",
+    desc: "We stay ahead of technology trends so you don't have to. From AI integrations to modern frameworks, we bring cutting edge solutions to every project.",
     stat: "5+",
     statLabel: "Tech Stacks",
   },
   {
     icon: Award,
     title: "Proven Track Record",
-    desc: "With 10+ years in the industry and clients across Nigeria and beyond, our portfolio speaks for itself. We've helped startups scale and enterprises modernize.",
+    desc: "With 8+ years in the industry and clients across Nigeria and beyond, our portfolio speaks for itself. We've helped startups scale and enterprises modernize.",
     stat: "200+",
     statLabel: "Projects Done",
   },
 ];
 
 export const stats = [
-  { value: "200+", label: "Projects Delivered" },
+  { value: "50+", label: "Projects Delivered" },
   { value: "98%", label: "Client Satisfaction" },
-  { value: "10+", label: "Years Experience" },
+  { value: "8+", label: "Years Experience" },
   { value: "24/7", label: "Support Available" },
 ];

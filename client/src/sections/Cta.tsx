@@ -47,30 +47,6 @@ const CTA = () => {
                     building their foundation to enterprises scaling for growth, we deliver the 
                     expertise, strategy, and technology needed to bring visions to life.
                 </p>
-
-                {/* <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-2">
-                    <a href="#contact" className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-white hover:bg-black/85 hover:text-white text-[#0b1a12] font-bold text-[15px] rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-purple-900/40 hover:-translate-y-0.5" >
-                        Start Your Project
-                        <ArrowRight
-                            size={17}
-                            className="transition-transform duration-200 group-hover:translate-x-1"
-                        />
-                    </a>
-
-                <a
-                    href="https://wa.me/2348000000000"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 border-2 border-white/40 hover:border-purple-300 text-white font-bold text-[15px] rounded-xl transition-all duration-200 hover:bg-purple-300/10 hover:-translate-y-0.5"
-                    
-                >
-                    <MessageCircle
-                        size={17}
-                        className="text-white transition-transform duration-200 group-hover:scale-110"
-                    />
-                    Chat on WhatsApp
-                </a>
-                </div> */}
             </div>
         </section>
     );

@@ -26,7 +26,7 @@ const TestimonialCard = ({ t }: { t: Testimonial }) => {
                     className="w-11 h-11 rounded-full object-cover ring-2 ring-[#22c55e]/30 group-hover:ring-[#22c55e]/60 transition-all duration-300"
                     />
                 <div>
-                <p className="text-white font-semibold text-sm" >
+                <p className="text-black/50 font-medium text-sm" >
                     {t.name}
                 </p>
                 <p className="text-purple-500 text-xs font-medium">
